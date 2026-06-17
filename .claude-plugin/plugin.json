@@ -1,0 +1,16 @@
+{
+  "name": "ai-os-starter-kit",
+  "version": "0.1.0",
+  "description": "Build a Personal AI Operating System: five layers, one weekly loop, plus ready-to-use skills for product managers.",
+  "author": "Ines Lourenço",
+  "license": "MIT",
+  "repository": "https://github.com/ilourenco/ai-os-starter-kit",
+  "keywords": [
+    "ai-os",
+    "productivity",
+    "product-management",
+    "skills",
+    "automation",
+    "memory"
+  ]
+}
