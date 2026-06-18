@@ -26,13 +26,13 @@ The router, `CLAUDE.md`, is the spine. It is read first, it indexes every layer,
 
 ## Layer 1: Context
 
-Files the agent reads at the start of every interaction: who you are, your voice, your strategy, your domain.
+Files the agent reads at the start of every interaction. Context has two halves. Identity is the personal half: who you are, your voice, your principles, your non-negotiables, the rules the agent must always enforce. Context is the organizational half: your company and stage, the area you own, your ICP, the metric you own, what is locked, what is open.
 
 - **What it does.** Removes the re-explaining tax. The agent already knows your role, your priorities, what is locked, and how you write.
 - **The trap: bloat.** Context files grow until they are no longer read closely. A 2,000-word profile is wallpaper.
 - **The discipline: 500 words per file.** If a file needs more, split it by topic. Short files get read. Long files get skimmed.
 
-Starter files: `context/profile.md` (rename to `pm.md` for product managers), `context/strategy.md`, `context/product-area.md`.
+Starter files: `context/identity.md` (the personal half) and `context/context.md` (the organizational half). Build identity first, then context.
 
 ---
 
@@ -56,7 +56,7 @@ Reusable prompt patterns saved as files the agent invokes by trigger.
 - **The trap: writing skills you never use.** A library of clever skills that sit idle is overhead, not leverage.
 - **The discipline: write the skill the third time you type the same prompt.** Register every skill in the router so the agent knows it exists. A skill not in the router is invisible.
 
-Starter files: the six builder skills, plus eight ready-to-use product management skills.
+Starter files: the seven builder skills (`build-identity`, `build-context`, `map-connections`, `forge-skill`, `schedule-automation`, `seed-memory`, `weekly-os-audit`), plus the ready-to-use product management skills, including `competitor-research` and `prd-writer`.
 
 ---
 
@@ -85,6 +85,12 @@ Typed, approved facts that persist between conversations.
 - **The discipline: approve every save, type it, write the why, load it every conversation.** The router carries the rule "read MEMORY.md before responding." Nothing enters memory without your yes.
 
 Starter file: `MEMORY.md`.
+
+---
+
+## Verification: the discipline that earns trust
+
+Verification is not a sixth layer. It is the discipline that runs through three places you already have. Skills refuse without their inputs, so a missing input stops the work instead of producing a confident guess. Automations show their sources, so you can check what they tell you. The Weekly OS Audit verifies the whole OS every week. Naming verification out loud is what makes an agentic OS trustworthy, because the parts that act on your behalf are also the parts that check themselves.
 
 ---
 

@@ -6,22 +6,21 @@ This file is the spine. It is read at the start of every interaction, it indexes
 
 ## Global rules
 
-These apply to everything you produce for me. Replace with your own once `build-context` runs.
+These apply to everything you produce for me. Replace with your own once `build-identity` runs.
 
 1. Lead with the conclusion, then the detail.
 2. Be concrete. Favour examples over adjectives.
 3. No dashes used as punctuation. Use commas, periods, or parentheses.
 4. Write in my voice (see `context/`), never generic AI prose.
 5. If you are unsure, ask one sharp question rather than guessing.
-6. [Your recurring correction goes here, captured by build-context.]
+6. [Your recurring correction goes here, captured by build-identity.]
 
 ## Context
 
-The files you read to know who I am. Keep each under 500 words.
+The files you read to know who I am. Context has two parts: identity (personal) and context (organizational). Keep each under 500 words.
 
-- `context/profile.md` — who I am, how I write, my principles. (Renamed to `context/pm.md` for product managers.)
-- `context/strategy.md` — this quarter's priorities, what is locked, what is open.
-- `context/product-area.md` — my domain, ICP, and the metric I own. (Product managers only.)
+- `context/identity.md` is the personal half: who I am, how I write, my principles, my non-negotiables, banned phrases, the rules you must always enforce.
+- `context/context.md` is the organizational half: my company and stage, the area I own, my ICP, the metric I own, this quarter, what is locked, what is open.
 
 ## Connections
 
@@ -31,11 +30,12 @@ The tools you can reach. Mapped by `map-connections`.
 
 ## Skills
 
-Reusable patterns you invoke by trigger. Registered by `forge-skill`.
+Reusable patterns you invoke by trigger. Registered by `forge-skill`. Two ship ready to use.
 
 | Skill | Purpose | When to use | Created |
 |---|---|---|---|
-| (your skills get registered here) | | | |
+| competitor-research | Decision-ready teardown and battlecard | "teardown", "battlecard", "competitor" | 2026-06-18 |
+| prd-writer | Problem-first, testable PRD | "PRD", "spec", "product brief" | 2026-06-18 |
 
 ## Automations
 

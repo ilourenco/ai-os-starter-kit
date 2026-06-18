@@ -14,7 +14,7 @@ The router file, `CLAUDE.md`, is the spine. It gets read first and indexes every
 
 | Layer | What it is | The trap 🪤 | The discipline ✅ |
 |---|---|---|---|
-| 1. **Context** 📇 | Files the AI reads every time: who you are, your voice, your strategy, your domain | Bloat. A 2,000-word profile is wallpaper | 500 words per file |
+| 1. **Context** 📇 | Files the AI reads every time, in two halves: identity (who you are, your voice, your rules) and context (your org, ICP, what is locked) | Bloat. A 2,000-word profile is wallpaper | 500 words per file |
 | 2. **Connections** 🔌 | The tools the AI can reach (Slack, Notion, Linear, Calendar) | Sprawl. Twelve authorized, three actually used | Map the few you use. Three beats twelve |
 | 3. **Skills** 🛠️ | Reusable prompt patterns saved as files, invoked by trigger | Writing skills you never touch again | Write it the third time you type it. Register every one in the router |
 | 4. **Automations** ⏰ | Scheduled prompts that run without you | Unconstrained output you quietly stop reading | Every automation gets a hard constraint. An index lists them all |
@@ -26,10 +26,16 @@ The router file, `CLAUDE.md`, is the spine. It gets read first and indexes every
 
 ---
 
+## ✅ Verification, the discipline that earns trust
+
+Verification is not a sixth layer. It is the discipline that runs through three places you already have. Skills refuse without their inputs, so a missing input stops the work instead of producing a confident guess. Automations show their sources, so you can check them. The Weekly OS Audit verifies the whole OS every Sunday. Name it out loud and an agentic OS becomes something you can trust.
+
+---
+
 ## ⚡ 60-second quickstart
 
 1. Install the kit (below) or clone it.
-2. Run the **`build-context`** skill. Answer the interview.
+2. Run **`build-identity`**, then **`build-context`**. Answer the interview.
 3. Watch your AI draft a message that actually sounds like you, unprompted. 🎉 That is Layer 1 working.
 4. When you are ready, run **`weekly-os-audit`** to schedule the loop. That is the OS maintaining itself while you sleep. 😴
 
@@ -37,7 +43,7 @@ The router file, `CLAUDE.md`, is the spine. It gets read first and indexes every
 
 ## 📦 Two ways to use it
 
-🔌 **As a Claude plugin.** Install it so the skills are available by trigger. Run `build-context` first, then the rest, then `weekly-os-audit` last.
+🔌 **As a Claude plugin.** Install it so the skills are available by trigger. Run `build-identity` then `build-context` first, then the rest, then `weekly-os-audit` last.
 
 📁 **As a template.** Clone the repo, copy the files in `templates/` into your working folder, and fill them in by hand using the structure as a guide. The `CLAUDE.md` template already carries the five section headers and the always-read-memory rule.
 
@@ -45,29 +51,30 @@ The router file, `CLAUDE.md`, is the spine. It gets read first and indexes every
 
 ## 🔨 Build order
 
-Six builder skills. Run them in order. Each builds one layer and registers it in the router.
+Seven builder skills. Run them in order. Each builds one layer and registers it in the router.
 
-1. 📇 `build-context` — your profile, strategy, product area, and the router.
-2. 🔌 `map-connections` — the few tools you actually use.
-3. 🛠️ `forge-skill` — turn a prompt you keep retyping into a registered skill.
-4. ⏰ `schedule-automation` — one recurring deliverable with a hard constraint.
-5. 🧩 `seed-memory` — three approved, typed starter memories.
-6. 🔁 `weekly-os-audit` — schedule the Sunday loop. **This is the one you do not skip.**
+1. 📇 `build-identity`. Your identity file (voice, principles, rules) and the router.
+2. 📇 `build-context`. Your org context: company, ICP, the metric you own, what is locked.
+3. 🔌 `map-connections`. The few tools you actually use.
+4. 🛠️ `forge-skill`. Turn a prompt you keep retyping into a registered skill.
+5. ⏰ `schedule-automation`. One recurring deliverable with a hard constraint.
+6. 🧩 `seed-memory`. Three approved, typed starter memories.
+7. 🔁 `weekly-os-audit`. Schedule the Sunday loop. **This is the one you do not skip.**
 
 ---
 
 ## 🧰 Ready-to-use PM skills
 
-Opinionated, each with a clear output format and at least one refusal, so your AI asks instead of guessing past a missing input.
+Opinionated, each with a clear output format and at least one refusal, so your AI asks instead of guessing past a missing input. Two you get out of the box and build live in the workshop: `competitor-research` and `prd-writer`.
 
 | Skill | What it does | It refuses without... |
 |---|---|---|
-| 📝 `prd-writer` | A feature PRD under 1,000 words | a target user and a customer quote or metric |
+| 📝 `prd-writer` | A problem-first, testable PRD under 1,000 words | a target user, a customer quote or metric, and a success metric |
+| ⚔️ `competitor-research` | A decision-ready teardown and battlecard | a named competitor, your ICP, and the decision it informs |
 | 🔍 `problem-brief` | Frames a problem before any solution | the problem and evidence stated first |
 | 📣 `status-update` | A tight, scannable status | a customer signal source |
 | 🚀 `kickoff-brief` | A five-paragraph sprint or feature kickoff | a real goal (not "build the feature") |
 | 🤝 `one-on-one-prep` | Commitments, blockers, open decisions | a named person |
-| ⚔️ `competitor-teardown` | A battlecard with a verifiable claim | a named competitor and your ICP |
 | ✅ `launch-readiness` | A go / no-go against stage-gate criteria | criteria to check against |
 | 🔄 `retro-writer` | What worked, what did not, what changes | at least one metric |
 
@@ -92,7 +99,7 @@ Most of the value shows up at Level 2. Most of the durability shows up at Level 
 
 You do not need a quarter. You need a week. (Honestly, a focused afternoon gets you most of the way.)
 
-- **Mon** 📇 — `build-context`. Stand up the router and your context files. Done when your AI drafts something in your voice.
+- **Mon** 📇. `build-identity` then `build-context`. Stand up the router and your two context files (identity and context). Done when your AI drafts something in your voice.
 - **Tue** 🔌 — `map-connections`. Map your three or four real tools.
 - **Wed** 🛠️ — `forge-skill` on the prompt you type most. Then do it twice more for your next two.
 - **Thu** ⏰ — `schedule-automation`. One deliverable, one hard constraint.

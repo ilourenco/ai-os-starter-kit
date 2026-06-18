@@ -15,11 +15,18 @@ The step-by-step build. Follow the order. Each step builds one layer and produce
 
 ## 📇 Step 1 (Mon): Build your context — Layer 1
 
-Run the **`build-context`** skill.
+Context has two halves. Build them in order: identity first, then context.
 
-- It interviews you one question at a time: role, a pasted writing sample for voice, principles, non-negotiables, banned phrases, AI dos and don'ts, this quarter's priorities, your domain, your tools, and the one correction you keep giving.
-- **Produces:** `context/profile.md` (renamed to `context/pm.md` if you are a PM), `context/strategy.md`, `context/product-area.md` (PMs only), and `CLAUDE.md` (the router).
-- **Done when:** the AI drafts a short message in your voice without being asked. If it does not sound like you, tune one file and rerun. 🎯
+Run the **`build-identity`** skill.
+
+- It interviews you one question at a time: role and seniority, a pasted writing sample for voice, your three non-negotiables, banned phrases, and the rules your agent must always enforce.
+- **Produces:** `context/identity.md` and `CLAUDE.md` (the router).
+
+Then run the **`build-context`** skill.
+
+- It reads `CLAUDE.md` first, then interviews you for your company and stage, the area you own, your ICP, the metric you own with its value, this quarter's priorities and the one thing you said no to, and what is locked versus open.
+- **Produces:** `context/context.md`, pointed to under `## Context` in `CLAUDE.md` alongside `context/identity.md`.
+- **Done when:** the AI drafts a short message in your voice without being asked, and cites what is locked when you ask. If it does not sound like you, tune one file and rerun. 🎯
 
 ## 🔌 Step 2 (Tue): Map your connections — Layer 2
 
